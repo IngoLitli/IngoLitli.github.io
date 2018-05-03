@@ -4,8 +4,8 @@ var x = 50;
 
 ctx.moveTo(0, 0);
 
-for (var i = 0; i <= 100; i++){
+for (var i = 0; i <= 200; i++){
     console.log(i);
-    ctx.lineTo(x, 100);
+    ctx.lineTo(i, i);
     ctx.stroke();
 }
