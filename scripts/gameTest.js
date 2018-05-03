@@ -7,5 +7,5 @@ ctx.moveTo(0, 0);
 for (var i = 0; i <= 200; i++){
     console.log(i);
     ctx.lineTo(i, i);
-    ctx.stroke();
 }
+ctx.stroke();
