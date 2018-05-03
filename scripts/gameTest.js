@@ -10,3 +10,5 @@ for (var i = 0; i <= 200; i++){
     ctx.lineTo(i, i);
 }
 ctx.stroke();
+
+console.log(onkeypress(key));
