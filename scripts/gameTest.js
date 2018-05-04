@@ -11,6 +11,5 @@ for (var i = 0; i <= 200; i++){
 }
 ctx.stroke();
 
-console.log(onkeypress(key));
 
 console.log(new Date());
