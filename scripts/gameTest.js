@@ -1,4 +1,4 @@
-var version = 3;
+var version = 4;
 var c = document.getElementById("testCanvas");
 var ctx = c.getContext("2d");
 var x = 50;
@@ -13,7 +13,8 @@ setTimeout(showTime(), 20);
 
 function showTime() {
     var d = new Date();
-    ctx.lineTo(200, d.getSeconds()*10);
+    var seconds = d.getSeconds()
+    ctx.lineTo(200, seconds*10);
     ctx.stroke();
     console.log(d.getSeconds());
 }
