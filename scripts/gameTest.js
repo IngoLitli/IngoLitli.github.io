@@ -5,16 +5,16 @@ var x = 50;
 
 ctx.moveTo(0, 0);
 console.log(version);
-ctx.lineTo(200, d.getSeconds()*10);
-ctx.stroke();
+//ctx.lineTo(200, d.getSeconds()*10);
+//ctx.stroke();
 
 
 setTimeout(showTime(), 20);
 
 function showTime() {
-    var date = new Date();
-    var seconds = date.getSeconds();
+    var d = new Date();
+    var seconds = d.getSeconds();
     ctx.lineTo(200, seconds*10);
     ctx.stroke();
-    console.log(date.getSeconds());
+    console.log(d.getSeconds());
 }
