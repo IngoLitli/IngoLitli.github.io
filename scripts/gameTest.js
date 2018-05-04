@@ -12,4 +12,9 @@ for (var i = 0; i <= 200; i++){
 ctx.stroke();
 
 
-console.log(new Date());
+setTimeout(showTime(), 20);
+
+function showTime() {
+    var d = new Date();
+    console.log(d.getSeconds());
+}
