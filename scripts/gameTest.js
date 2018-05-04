@@ -12,9 +12,9 @@ ctx.stroke();
 setTimeout(showTime(), 20);
 
 function showTime() {
-    var d = new Date();
-    var seconds = d.getSeconds();
+    var date = new Date();
+    var seconds = date.getSeconds();
     ctx.lineTo(200, seconds*10);
     ctx.stroke();
-    console.log(d.getSeconds());
+    console.log(date.getSeconds());
 }
