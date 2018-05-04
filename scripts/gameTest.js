@@ -13,7 +13,7 @@ setTimeout(showTime(), 20);
 function showTime() {
     var d = new Date();
     var seconds = d.getSeconds();
-    ctx.moveTo(seconds*10, 0);
+    ctx.moveTo(600-(seconds*10), 600-(seconds*10));
     ctx.lineTo(seconds*10, seconds*10);
     ctx.stroke();
     console.log(d.getSeconds());
